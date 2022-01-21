@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1.5%;
+  border-radius: 15px;
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.my-20 {
+  margin: 20px 0;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+.heading {
+  font-weight: 600;
+}
+
+.heading:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.description {
+  color: hsl(215, 51%, 70%);
+}
+.light-blue {
+  color: hsl(215, 51%, 70%);
+}
+
+.cyan {
+  color: hsl(178, 100%, 50%);
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  width: 100%;
+}
+.values--eth {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  color: hsl(178, 100%, 50%);
+}
+
+.values--eth span {
+  margin-left: 7px;
+}
+
+.values--time {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.values--time span {
+  margin-left: 5px;
+}
+
+.creator {
+  width: 100%;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+
+.creator > span {
+  margin-left: 15px;
+}
+
+.creator img {
+  width: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
+.line {
+  border-bottom: 2px solid hsl(215, 51%, 70%);
+  width: 100%;
+}
+
+.author:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.container:hover .middle {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.middle {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 255, 247, 0.349);
+  border-radius: 10px;
+}
+
+.icon {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  transform: translate(0%, 131%);
+}

@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        bottom: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="container">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="image-equilibrium"
+          class="image"
+        />
+        <div class="middle">
+          <div class="icon">
+            <img src="./images/icon-view.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+      <p class="mt-20 heading">Equilibrium #3429</p>
+      <p class="mt-20 description light-blue">
+        Our Equilibrium collection promotes <br />
+        balance and calm.
+      </p>
+      <div class="mt-20 values">
+        <span class="values--eth">
+          <img src="./images/icon-ethereum.svg" alt="icon-ethereum" />
+          <span> 0.041 ETH</span>
+        </span>
+        <span class="values--time">
+          <img src="./images/icon-clock.svg" alt="icon-clock" />
+          <span class="light-blue"> 3 days left</span>
+        </span>
+      </div>
 
-  Equilibrium #3429
+      <div class="line mt-20"></div>
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="creator mt-20">
+        <img src="./images/image-avatar.png" alt="image-avatar" />
+        <span>
+          <span class="light-blue">Creation of</span>
+          <span class="author"> Jules Wyvern</span>
+        </span>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
